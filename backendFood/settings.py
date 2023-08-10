@@ -2,8 +2,8 @@ from datetime import timedelta
 from pathlib import Path
 import os
 import dj_database_url
-from django.conf import settings
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.conf import Settings
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -68,7 +68,6 @@ WSGI_APPLICATION = 'backendFood.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    # Add any other allowed origins here
 ]
 
 CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
